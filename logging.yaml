@@ -1,0 +1,30 @@
+version: 1
+disable_existing_loggers: false
+
+formatters:
+  detailed:
+    format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: detailed
+    stream: ext://sys.stdout
+  file:
+    class: logging.handlers.RotatingFileHandler
+    formatter: detailed
+    maxBytes: 1048576
+    backupCount: 3
+    encoding: utf-8
+
+loggers:
+  restaurante_api:
+    handlers:
+      - console
+      - file
+    propagate: false
+
+root:
+  level: WARNING
+  handlers:
+    - console

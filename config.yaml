@@ -1,0 +1,8 @@
+aplicacao:
+  nome: "Sistema de Restaurante"
+  descricao: "API para gerenciar o cardápio, as mesas e os pedidos do restaurante."
+  versao: "0.1.0"
+
+logging:
+  nivel: "INFO"
+  arquivo: "storage/logs/sistema.log"

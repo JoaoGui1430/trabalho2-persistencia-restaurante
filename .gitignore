@@ -1,0 +1,23 @@
+# Arquivos gerados e configurações locais
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+storage/*
+!storage/logs/
+storage/logs/*
+!storage/logs/.gitkeep
+tmp/
+*.db
+*.sqlite
+*.sqlite3
+.pytest_cache/
+.coverage
+htmlcov/
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
